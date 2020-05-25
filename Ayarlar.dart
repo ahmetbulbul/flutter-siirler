@@ -26,7 +26,6 @@ class BodyLayout extends StatelessWidget {
   }
 }
 
-// replace this function with the code in the examples
 Widget _myListView(BuildContext context) {
 
   final titles = ['Bildirimler', 'Bildirim saati', 'Dil'];
@@ -37,7 +36,7 @@ Widget _myListView(BuildContext context) {
   return ListView.builder(
     itemCount: titles.length,
     itemBuilder: (context, index) {
-      return Card( //                           <-- Card widget
+      return Card( //                         
         child: ListTile(
           leading: Icon(icons[index]),
           title: Text(titles[index]),
